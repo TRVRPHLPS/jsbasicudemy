@@ -20,4 +20,4 @@ var appData = {
 }
 
 
-document.write(money / 30)
+alert(money / 30)

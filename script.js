@@ -1,3 +1,4 @@
+
 let money, time;
 
 function start() {
@@ -62,17 +63,49 @@ chooseExpenses();
 
 
 
-appData.moneyPerDay = (appData.budget / 30).toFixed(1);
+function detectDayBudget() {
+
+    appData.moneyPerDay = (appData.budget / 30).toFixed(1);
+    alert("Daily Budget = " + appData.moneyPerDay);
+
+}
+
+detectDayBudget();
 
 
-alert("Daily Budget = " + appData.moneyPerDay);
 
-if (appData.moneyPerDay < 100) {
-    console.log("Minimal money needs")
-} else if (appData.moneyPerDay > 100 && appData.moneyPerDay < 2000) {
-    console.log("Medium level of life");
-} else if (appData.moneyPerDay > 2000) { console.log("High level of life") }
-else { console.log("SomethingWrong") }
+
+function detectLevel() {
+
+
+    if (appData.moneyPerDay < 100) {
+        console.log("Minimal money needs")
+    } else if (appData.moneyPerDay > 100 && appData.moneyPerDay < 2000) {
+        console.log("Medium level of life");
+    } else if (appData.moneyPerDay > 2000) { console.log("High level of life") }
+    else { console.log("SomethingWrong") }
+
+
+
+}
+
+detectLevel();
+
+
+
+function chooseOptExpenses() {
+
+    for (let oeq = 0; oeq < 3; oeq++) {
+        let oeqQuest = prompt("Not Mandatory Spends");
+        appData.optionalExpenses[oeq] = oeqQuest;
+
+    }
+
+
+}
+
+
+chooseOptExpenses();
 
 
 

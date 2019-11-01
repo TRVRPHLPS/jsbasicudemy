@@ -1,0 +1,46 @@
+.black {
+
+    width:30px;
+    height:30px;
+    background:black;
+    border-radius:8px;
+
+}
+
+
+
+.box {
+
+    width:30vw;
+    height:20vh;
+    background:red;
+}
+
+button {
+
+    background:black;
+    color:white;
+    border:0;
+    border-radius:8px;
+    padding:32px;
+
+}
+
+.circle {
+
+    background-color:blue;
+    border-radius:50%;
+    width:30px;
+    height:30px;
+
+}
+
+.heart {
+
+    width:35px;
+    height:35px;
+    display:inline-block;
+    margin:8px;
+    background:red;
+
+}
